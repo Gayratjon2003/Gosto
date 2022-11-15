@@ -1,5 +1,6 @@
 import React from "react";
 import Banner from "./banner/Banner";
+import Blog from "./blog/Blog";
 import Card from "./hero/Card";
 import Hero from "./hero/Hero";
 import Price from "./price/Price";
@@ -17,6 +18,7 @@ const Home = () => {
       <TopProduct />
       <Price />
       <Testimonial />
+      <Blog />
     </>
   );
 };
