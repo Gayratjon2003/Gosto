@@ -1,8 +1,14 @@
 import React from "react";
 import { AiOutlineHeart } from "react-icons/ai";
 import { FiSearch, FiShoppingBag } from "react-icons/fi";
+import { useDispatch } from "react-redux";
+import { ADD } from "../../../controller/action";
 
 const SearchItems = ({ value, product, onSearch }) => {
+  const dispatch = useDispatch();
+  const addToCart = (e) => {
+    dispatch(ADD(e))
+  }
   return (
     <>
       <section className="searchItems">
@@ -13,7 +19,7 @@ const SearchItems = ({ value, product, onSearch }) => {
               const title = items.title.toLowerCase();
 
               return (
-                searchkey && title.startsWith(searchkey) && title !== searchkey
+                searchkey && title.includes(searchkey) && title !== searchkey
               );
             })
             .slice(0, 10)
@@ -23,7 +29,7 @@ const SearchItems = ({ value, product, onSearch }) => {
                   <img src={item.cover} alt={item.title} />
                   <div className="overlay">
                     <button className="button">
-                      <FiShoppingBag />
+                      <FiShoppingBag onClick={()=> addToCart(item)} />
                     </button>
                     <button className="button">
                       <AiOutlineHeart />
