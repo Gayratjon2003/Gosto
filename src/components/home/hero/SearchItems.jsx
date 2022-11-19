@@ -2,12 +2,13 @@ import React from "react";
 import { AiOutlineHeart } from "react-icons/ai";
 import { FiSearch, FiShoppingBag } from "react-icons/fi";
 import { useDispatch } from "react-redux";
-import { ADD } from "../../../controller/action";
+import { addCart } from "../../../controller/shop/shopSlice";
+
 
 const SearchItems = ({ value, product, onSearch }) => {
   const dispatch = useDispatch();
   const addToCart = (e) => {
-    dispatch(ADD(e))
+    dispatch(addCart(e))
   }
   return (
     <>

@@ -13,7 +13,7 @@ import {
   AiOutlineDelete,
 } from "react-icons/ai";
 import cartImg from "../assets/images/cart.png";
-import { DELETE } from "../../controller/action";
+import { delCarts } from "../../controller/shop/shopSlice";
 const Header = () => {
   window.addEventListener("scroll", function () {
     const header = this.document.querySelector(".header");
@@ -22,13 +22,13 @@ const Header = () => {
   const [mobile, setMobile] = useState(false);
   const dispatch = useDispatch();
   // add cart in shop
-  const getData = useSelector((state) => state.cartReducer.carts);
+  const getData = useSelector((store) => store.shop.carts);
   const [cartList, setCartList] = useState(false);
   const handleClose = () => {
     setCartList(null);
   };
   const delet = (id) => {
-    dispatch(DELETE(id));
+    dispatch(delCarts(id));
   };
   // Total price
   const [price, setPrice] = useState(0);
@@ -57,7 +57,9 @@ const Header = () => {
               </button>
             </div>
             <div className="left">
+              <Link to="/">
               <img src={logo} alt="logo" />
+              </Link>
             </div>
             <div className="center">
               <ul className={mobile ? "mobile-nav" : "menu"}>

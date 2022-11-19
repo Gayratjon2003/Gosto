@@ -1,6 +1,6 @@
 import "./App.css";
 import Pages from "./components/home/pages/Pages";
-import store from "./controller/store";
+import {store} from "./store";
 import { Provider } from "react-redux";
 
 function App() {

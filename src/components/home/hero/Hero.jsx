@@ -9,7 +9,7 @@ const Hero = () => {
     setValue(e.target.value);
   };
   const onSearch = (val) => {
-    console.log(val);
+    // console.log(val);
   };
   return (
     <>

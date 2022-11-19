@@ -3,12 +3,12 @@ import { useDispatch, useSelector } from "react-redux";
 import { useHistory, useParams } from "react-router-dom";
 import { MdStarRate } from "react-icons/md";
 import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
-import { ADD, DELETE, REMOVE_INT } from "../../../controller/action";
+import { addCart, decCarts, delCarts } from "../../../controller/shop/shopSlice";
 
 const Details = () => {
   const [data, setData] = useState([]);
   const { id } = useParams();
-  const getdata = useSelector((state) => state.cartReducer.carts);
+  const getdata = useSelector((state) => state.shop.carts);
   const dispatch = useDispatch();
   const compare = () => {
     let compareData = getdata.filter((e) => {
@@ -18,16 +18,16 @@ const Details = () => {
   };
   useEffect(() => {
     compare();
-  }, [id]);
+  }, [id, getdata]);
   const increment = (e) => {
-    dispatch(ADD(e));
+    dispatch(addCart(e));
   };
   const decrement = (item) => {
-    dispatch(REMOVE_INT(item));
+    dispatch(decCarts(item));
   };
   const history = useHistory();
   const deletes = (id) => {
-    dispatch(DELETE(id));
+    dispatch(delCarts(id));
     history.push("/");
   };
   return (

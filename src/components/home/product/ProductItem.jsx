@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineHeart } from "react-icons/ai";
 import { FiShoppingBag, FiSearch } from "react-icons/fi";
 import { useDispatch } from "react-redux";
-import {ADD} from "../../../controller/action";
+import { addCart } from "../../../controller/shop/shopSlice";
 
 const ProductItem = ({ data }) => {
   const [openImage, setOpenImage] = useState(false);
@@ -16,7 +16,7 @@ const ProductItem = ({ data }) => {
   };
   const dispatch = useDispatch();
   const addToCart = (e) => {
-    dispatch(ADD(e))
+    dispatch(addCart(e))
   }
   return (
     <>
