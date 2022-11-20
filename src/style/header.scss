@@ -7,6 +7,9 @@ header {
   }
   nav {
     @extend .container;
+    @media (max-width: 750px) {
+      width: 100%;
+    }
   }
   .toggle {
     display: none;
@@ -31,7 +34,9 @@ header {
         a {
           text-transform: uppercase;
           font-size: $md;
+          white-space: nowrap
         }
+        margin-right: $sm;
       }
     }
   }

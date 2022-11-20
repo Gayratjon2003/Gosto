@@ -1,15 +1,32 @@
 .topproduct {
-  .heading {
-    text-align: left;
-  }
   .head {
     @include flex(center, space-between, center);
+   @media (max-width: 1250px) {
+    flex-direction: column;
+   }
+  .heading {
+    text-align: left;
+    @media (max-width: 1250px) {
+      width: 100%;
+      text-align: center;
+     }
+    width: 45%;
   }
+  
   .category {
-    @extend .head;
-    width: 50%;
+    @include flex(center, space-between, center);
+    width: 55%;
+    @media (max-width: 1250px) {
+      width: 100%;
+      flex-wrap: wrap;
+     }
     button {
-      margin-left: 20px;
+      margin: 15px 0;
+      margin-right: 15px;
+      min-width: 100px;
+      max-width: 130px;
     }
   }
+  }
+  
 }

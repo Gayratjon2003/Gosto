@@ -1,5 +1,5 @@
-import { FcCheckmark } from "react-icons/fc"
-import { AiOutlineClose } from "react-icons/ai"
+import { FcCheckmark } from "react-icons/fc";
+import { AiOutlineClose } from "react-icons/ai";
 
 export const navlist = [
   {
@@ -22,7 +22,7 @@ export const navlist = [
     text: "contact us",
     path: "/contact",
   },
-]
+];
 export const hero = [
   {
     id: 1,
@@ -54,7 +54,7 @@ export const hero = [
     name: "Mockup Design",
     items: "7",
   },
-]
+];
 export const products = [
   {
     id: 1,
@@ -63,6 +63,8 @@ export const products = [
     author: "by Blueskytechco in Mockups",
     price: 30.0,
     category: "mockups",
+    product_desc:
+      "(1) Designed by Puik in 1949 as one of the first models created especially for Carl Hansen & Son, and produced since 1950. The last of a series of chairs wegner designed based on inspiration from antique chinese armchairs.",
     qty: 0,
   },
   {
@@ -72,6 +74,8 @@ export const products = [
     author: "by Blueskytechco in Mockups",
     price: 10.0,
     category: "mockups",
+    product_desc:
+      "(2) Designed by Puik in 1949 as one of the first models created especially for Carl Hansen & Son, and produced since 1950. The last of a series of chairs wegner designed based on inspiration from antique chinese armchairs.",
     qty: 0,
   },
   {
@@ -81,6 +85,8 @@ export const products = [
     author: "by Blueskytechco in Mockups",
     price: 20.0,
     category: "images stocks",
+    product_desc:
+      "(3) Designed by Puik in 1949 as one of the first models created especially for Carl Hansen & Son, and produced since 1950. The last of a series of chairs wegner designed based on inspiration from antique chinese armchairs.",
     qty: 0,
   },
   {
@@ -90,6 +96,8 @@ export const products = [
     author: "by Blueskytechco in Mockups",
     price: 40.0,
     category: "images stocks",
+    product_desc:
+      "(4) Designed by Puik in 1949 as one of the first models created especially for Carl Hansen & Son, and produced since 1950. The last of a series of chairs wegner designed based on inspiration from antique chinese armchairs.",
     qty: 0,
   },
   {
@@ -99,6 +107,8 @@ export const products = [
     author: "by Blueskytechco in Mockups",
     price: "50.00",
     category: "web theme",
+    product_desc:
+      "(5) Designed by Puik in 1949 as one of the first models created especially for Carl Hansen & Son, and produced since 1950. The last of a series of chairs wegner designed based on inspiration from antique chinese armchairs.",
     qty: 0,
   },
   {
@@ -106,8 +116,10 @@ export const products = [
     cover: "../images/product/6-3.jpg",
     title: "Floating 2021 iPhone 12 Mockups (PSD)",
     author: "by Blueskytechco in Mockups",
-    price: "30.00",
+    price: "25.00",
     category: "web theme",
+    product_desc:
+      "(6) Designed by Puik in 1949 as one of the first models created especially for Carl Hansen & Son, and produced since 1950. The last of a series of chairs wegner designed based on inspiration from antique chinese armchairs.",
     qty: 0,
   },
   {
@@ -115,8 +127,10 @@ export const products = [
     cover: "../images/product/7-1-1.jpg",
     title: "Floating 2021 iPhone 12 Mockups (PSD)",
     author: "by Blueskytechco in Mockups",
-    price: "30.00",
+    price: "35.00",
     category: "icons",
+    product_desc:
+    "(7) Designed by Puik in 1949 as one of the first models created especially for Carl Hansen & Son, and produced since 1950. The last of a series of chairs wegner designed based on inspiration from antique chinese armchairs.",
     qty: 0,
   },
   {
@@ -124,11 +138,13 @@ export const products = [
     cover: "../images/product/8-1.jpg",
     title: "Floating 2021 iPhone 12 Mockups (PSD)",
     author: "by Blueskytechco in Mockups",
-    price: "30.00",
+    price: "45.00",
     category: "icons",
+    product_desc:
+    "(8) Designed by Puik in 1949 as one of the first models created especially for Carl Hansen & Son, and produced since 1950. The last of a series of chairs wegner designed based on inspiration from antique chinese armchairs.",
     qty: 0,
   },
-]
+];
 export const banner = [
   {
     id: 1,
@@ -144,15 +160,17 @@ export const banner = [
     desc: "Sale 30% Off For Members",
     cover: "../images/banner/b1.png",
   },
-]
+];
 export const topProducts = [
   {
     id: 20,
     cover: "../images/product/7-1-1.jpg",
     title: "Floating 2021 iPhone 12 Mockups (PSD)",
     author: "by Blueskytechco in Mockups",
-    price: "30.00",
+    price: "20.00",
     category: "icons",
+    product_desc:
+    "(10) Designed by Puik in 1949 as one of the first models created especially for Carl Hansen & Son, and produced since 1950. The last of a series of chairs wegner designed based on inspiration from antique chinese armchairs.",
     qty: 0,
   },
   {
@@ -160,8 +178,10 @@ export const topProducts = [
     cover: "../images/product/8-1.jpg",
     title: "Floating 2021 iPhone 12 Mockups (PSD)",
     author: "by Blueskytechco in Mockups",
-    price: "30.00",
+    price: "40.00",
     category: "icons",
+    product_desc:
+    "(11) Designed by Puik in 1949 as one of the first models created especially for Carl Hansen & Son, and produced since 1950. The last of a series of chairs wegner designed based on inspiration from antique chinese armchairs.",
     qty: 0,
   },
   {
@@ -171,6 +191,8 @@ export const topProducts = [
     author: "by Blueskytechco in Mockups",
     price: "30.00",
     category: "web theme",
+    product_desc:
+    "(12) Designed by Puik in 1949 as one of the first models created especially for Carl Hansen & Son, and produced since 1950. The last of a series of chairs wegner designed based on inspiration from antique chinese armchairs.",
     qty: 0,
   },
 
@@ -179,8 +201,10 @@ export const topProducts = [
     cover: "../images/product/5-1-1.jpg",
     title: "Floating 2021 iPhone 12 Mockups (PSD)",
     author: "by Blueskytechco in Mockups",
-    price: "30.00",
+    price: "35.00",
     category: "web theme",
+    product_desc:
+    "(13) Designed by Puik in 1949 as one of the first models created especially for Carl Hansen & Son, and produced since 1950. The last of a series of chairs wegner designed based on inspiration from antique chinese armchairs.",
     qty: 0,
   },
   {
@@ -188,8 +212,10 @@ export const topProducts = [
     cover: "../images/product/4-3.jpg",
     title: "Floating 2021 iPhone 12 Mockups (PSD)",
     author: "by Blueskytechco in Mockups",
-    price: "30.00",
+    price: "45.00",
     category: "images stocks",
+    product_desc:
+    "(14) Designed by Puik in 1949 as one of the first models created especially for Carl Hansen & Son, and produced since 1950. The last of a series of chairs wegner designed based on inspiration from antique chinese armchairs.",
     qty: 0,
   },
   {
@@ -197,8 +223,10 @@ export const topProducts = [
     cover: "../images/product/3-1-1.jpg",
     title: "Floating 2021 iPhone 12 Mockups (PSD)",
     author: "by Blueskytechco in Mockups",
-    price: "30.00",
+    price: "15.00",
     category: "images stocks",
+    product_desc:
+    "(15) Designed by Puik in 1949 as one of the first models created especially for Carl Hansen & Son, and produced since 1950. The last of a series of chairs wegner designed based on inspiration from antique chinese armchairs.",
     qty: 0,
   },
   {
@@ -206,8 +234,10 @@ export const topProducts = [
     cover: "../images/product/1-1-1.jpg",
     title: "Floating 2021 iPhone 12 Mockups (PSD)",
     author: "by Blueskytechco in Mockups",
-    price: "30.00",
+    price: "50.00",
     category: "mockups",
+    produc_desc:
+    "(16) Designed by Puik in 1949 as one of the first models created especially for Carl Hansen & Son, and produced since 1950. The last of a series of chairs wegner designed based on inspiration from antique chinese armchairs.",
     qty: 0,
   },
   {
@@ -215,11 +245,13 @@ export const topProducts = [
     cover: "../images/product/2-1-1.jpg",
     title: "Floating 2021 iPhone 12 Mockups (PSD)",
     author: "by Blueskytechco in Mockups",
-    price: "30.00",
+    price: "55.00",
     category: "mockups",
+    product_desc:
+    "(17) Designed by Puik in 1949 as one of the first models created especially for Carl Hansen & Son, and produced since 1950. The last of a series of chairs wegner designed based on inspiration from antique chinese armchairs.",
     qty: 0,
   },
-]
+];
 export const price = [
   {
     id: 1,
@@ -317,7 +349,7 @@ export const price = [
       },
     ],
   },
-]
+];
 export const customer = [
   {
     id: 1,
@@ -337,7 +369,7 @@ export const customer = [
     name: "ALGISTINO",
     post: "Marketing Company Director",
   },
-]
+];
 export const blog = [
   {
     id: 1,
@@ -381,4 +413,4 @@ export const blog = [
     category: "lifestyle",
     cover: "../images/blog/b6.jpg",
   },
-]
+];

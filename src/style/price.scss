@@ -7,6 +7,9 @@
   }
   .content {
     @include grid(repeat(3, 1fr), 30px);
+    @media (max-width: 1111px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
     max-width: 80%;
     margin: auto;
     .box {

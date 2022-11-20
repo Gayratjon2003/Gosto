@@ -74,10 +74,7 @@ const Details = () => {
                 <div className="desc">
                   <h4>PRODUCTS DESCRIPTION</h4>
                   <p>
-                    Designed by Puik in 1949 as one of the first models created
-                    especially for Carl Hansen & Son, and produced since 1950.
-                    The last of a series of chairs wegner designed based on
-                    inspiration from antique chinese armchairs.
+                    {item?.product_desc}
                   </p>
                   <h4>PRODUCT DETAILS</h4>
                   <ul>

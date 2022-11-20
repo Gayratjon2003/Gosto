@@ -1,9 +1,16 @@
 .cards {
-  display: grid;
-  @include grid(repeat(5, 1fr), 30px);
+  @include flex(center, space-between, row);
+  flex-wrap: wrap;
+  gap: 30px;
   .card {
     @include flex(center, none, center);
-
+    min-width: 200px;
+    @media (max-width: 555px) {
+      width: 100%;
+    }
+    @media (max-width: 750px) {
+      // width: 47%;
+    }
     img {
       width: 60px;
       margin-right: $md;

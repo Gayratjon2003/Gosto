@@ -1,11 +1,13 @@
 .customer {
   .content {
     @include grid(repeat(3, 1fr), 30px);
+    @media (max-width: 600px) {
+      grid-template-columns: repeat(1, 1fr) !important;
+    }
     text-align: center;
     .card {
       margin-top: $xl-3;
       position: relative;
-
       button {
         @include width(65px, 65px, $white, $text, 40px, none);
         @include shadow(-9px 18px 27px 0px rgb(23 45 89 / 10%));
